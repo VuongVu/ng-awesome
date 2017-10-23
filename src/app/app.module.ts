@@ -4,16 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './containers/home/home.component';
-import { SignInComponent } from './containers/sign-in/sign-in.component';
-import { NavBarComponent } from './components/navbar/navbar.component';
+import { SharedModule } from './shared/shared.module';
+import { HomeModule } from './components/home/home.module';
+import { SignInModule } from './components/sign-in/sign-in.module';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SignInComponent, NavBarComponent],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-awesome' }),
     AppRoutingModule,
+    BrowserModule.withServerTransition({ appId: 'ng-awesome' }),
+    SharedModule.forRoot(),
+    HomeModule,
+    SignInModule,
   ],
+  declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
