@@ -16,15 +16,8 @@
   width: 100%;
 }
 
-.triangle {
-  border: 9px solid transparent;
-  border-bottom: 9px solid #efefef;
-  margin-left: -9px;
-  bottom: 100%;
-  left: 50%;
-  content: ' ';
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+.navbar-menu {
+  @media screen and (max-width: 1023px) {
+    background-color: #ffffff !important;
+  }
 }

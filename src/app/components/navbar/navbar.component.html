@@ -1,180 +1,219 @@
-<nav class="navbar is-transparent is-danger">
-  <div class="container">
+<section class="hero is-link is-small">
 
-    <!--  ****************  -->
-    <!--  NAVBAR BRAND START  -->
-    <!--  ****************  -->
-    <div class="navbar-brand">
-      <a class="navbar-item" [routerLink]="['/']">
-        <p class="title has-text-white">V-Shop</p>
-      </a>
+  <!--  ****************  -->
+  <!--  HERO HEAD START  -->
+  <!--  ****************  -->
+  <div class="hero-head">
+    <nav class="navbar is-transparent" style="margin-top: 5px">
+      <div class="container">
 
-      <div class="navbar-burger burger" data-target="navMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <!--  ****************  -->
-    <!--  NAVBAR BRAND END  -->
-    <!--  ****************  -->
+        <!--  ****************  -->
+        <!--  NAVBAR BRAND START  -->
+        <!--  ****************  -->
+        <div class="navbar-brand">
+          <a class="navbar-item" [routerLink]="['/']">
+            <p class="title has-text-white">V-Shop</p>
+          </a>
 
-    <!--  ****************  -->
-    <!--  NAVBAR MENU START  -->
-    <!--  ****************  -->
-    <div id="navMenu" class="navbar-menu">
-
-      <!--  ****************  -->
-      <!--  NAVBAR-START START  -->
-      <!--  ****************  -->
-      <div class="navbar-start fullwidth">
-        <div class="navbar-item fullwidth">
-          <div class="field has-addons has-addons-centered fullwidth">
-            <p class="control has-icons-right" style="width: 60%">
-              <input class="input is-light" type="text" placeholder="Search...">
-              <span class="icon is-small is-right has-text-black">
-                <i class="fa fa-lg fa-keyboard-o"></i>
-              </span>
-            </p>
-            <p class="control">
-              <a class="button is-light">
-                <span class="icon">
-                  <i class="fa fa-search"></i>
-                </span>
-                <span>Search</span>
-              </a>
-            </p>
+          <div class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-      </div>
-      <!--  ****************  -->
-      <!--  NAVBAR-START END  -->
-      <!--  ****************  -->
+        <!--  ****************  -->
+        <!--  NAVBAR BRAND END  -->
+        <!--  ****************  -->
 
-      <!--  ****************  -->
-      <!--  NAVBAR-END START  -->
-      <!--  ****************  -->
-      <div class="navbar-end">
-        <div class="navbar-item is-desktop is-widescreen is-hidden-mobile is-hidden-tablet-only">
-          <div class="field is-grouped">
+        <!--  ****************  -->
+        <!--  NAVBAR MENU START  -->
+        <!--  ****************  -->
+        <div id="navMenu" class="navbar-menu">
 
-            <div class="control">
-              <div class="navbar-item has-dropdown is-hoverable">
-
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fa fa-user"></i>
+          <!--  ****************  -->
+          <!--  NAVBAR-START START  -->
+          <!--  ****************  -->
+          <div class="navbar-start fullwidth">
+            <div class="navbar-item fullwidth">
+              <div class="field has-addons has-addons-centered fullwidth">
+                <p class="control has-icons-right" style="width: 60%">
+                  <input class="input is-light" type="text" placeholder="Search...">
+                  <span class="icon is-small is-right has-text-black">
+                    <i class="fa fa-lg fa-keyboard-o"></i>
                   </span>
-                  <span>Sign In</span>
-                </a>
+                </p>
+                <p class="control">
+                  <a class="button is-light">
+                    <span class="icon">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <span>Search</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  ****************  -->
+          <!--  NAVBAR-START END  -->
+          <!--  ****************  -->
 
-                <div class="navbar-dropdown is-boxed is-centered" style="margin-top: 10px; margin-left: -70%">
-                  <div class="navbar-item">
-                    <a class="button is-warning is-fullwidth has-text-weight-bold">Sign In</a>
-                  </div>
-                  <div class="navbar-item ">
-                    <a class="button is-warning is-fullwidth has-text-weight-bold">Create an account</a>
-                  </div>
+          <!--  ****************  -->
+          <!--  NAVBAR-END START  -->
+          <!--  ****************  -->
+          <div class="navbar-end">
+            <div class="navbar-item is-hidden-mobile is-hidden-tablet-only">
+              <div class="field is-grouped">
 
-                  <hr class="navbar-divider">
+                <div class="control">
+                  <div class="navbar-item has-dropdown is-hoverable">
 
-                  <div class="navbar-item">
-                    <a class="button is-link is-fullwidth" style="background-color: #3C5998">
+                    <a class="button is-white is-outlined">
                       <span class="icon">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-user"></i>
                       </span>
-                      <span>Sign in with Facebook</span>
+                      <span>Sign In</span>
                     </a>
-                  </div>
-                  <div class="navbar-item">
-                    <a class="button is-danger is-fullwidth" style="background-color: #DF4A33">
-                      <span class="icon">
-                        <i class="fa fa-google-plus"></i>
-                      </span>
-                      <span>Sign in with Google</span>
-                    </a>
-                  </div>
-                  <div class="navbar-item">
-                    <a class="button is-link is-fullwidth" style="background-color: #108EDD">
-                      <span class="icon has-icons-left">
-                        <i class="fa fa-twitter"></i>
-                      </span>
-                      <span>Sign in with Twitter</span>
-                    </a>
+
+                    <div class="navbar-dropdown is-boxed is-centered" style="margin-top: 3px; margin-left: -70%">
+                      <div class="navbar-item">
+                        <a class="button is-warning is-fullwidth has-text-weight-bold">Sign In</a>
+                      </div>
+                      <div class="navbar-item ">
+                        <a class="button is-warning is-fullwidth has-text-weight-bold">Create an account</a>
+                      </div>
+
+                      <div class="is-divider" data-content="OR"></div>
+
+                      <div class="navbar-item">
+                        <a class="button is-link is-fullwidth" style="background-color: #3C5998">
+                          <span class="icon">
+                            <i class="fa fa-facebook"></i>
+                          </span>
+                          <span>Sign in with Facebook</span>
+                        </a>
+                      </div>
+                      <div class="navbar-item">
+                        <a class="button is-danger is-fullwidth" style="background-color: #DF4A33">
+                          <span class="icon">
+                            <i class="fa fa-google-plus"></i>
+                          </span>
+                          <span>Sign in with Google</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+                <p class="control">
+                  <a class="button is-white is-outlined is-badge-warning badge" data-badge="0">
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                    <span>Cart</span>
+                  </a>
+                </p>
+
               </div>
             </div>
 
-            <p class="control">
-              <a class="button is-white is-outlined">
-                <span class="icon">
-                  <i class="fa fa-shopping-cart"></i>
-                </span>
-                <span>Cart</span>
-                <span class="cart-count">0</span>
-              </a>
-            </p>
+            <div class="navbar-item is-hidden-desktop">
 
-          </div>
-        </div>
+              <div class="navbar-item">
+                <a class="button is-fullwidth is-primary is-outlined is-badge-warning badge" data-badge="0">
+                  <span class="icon">
+                    <i class="fa fa-shopping-cart"></i>
+                  </span>
+                  <span>Cart</span>
+                </a>
+              </div>
 
-        <div class="navbar-item is-hidden-desktop">
+              <div class="navbar-item">
+                <a class="button is-warning is-fullwidth has-text-weight-bold">Sign In</a>
+              </div>
+              <div class="navbar-item ">
+                <a class="button is-warning is-fullwidth has-text-weight-bold">Create an account</a>
+              </div>
 
-          <div class="navbar-item has-text-centered">
-            <a class="button is-danger is-outlined">
-              <span class="icon">
-                <i class="fa fa-shopping-cart"></i>
-              </span>
-              <span>Cart</span>
-              <span class="cart-count">0</span>
-            </a>
-          </div>
+              <div class="is-divider" data-content="OR"></div>
 
-          <div class="navbar-item">
-            <a class="button is-warning is-fullwidth has-text-weight-bold">Sign In</a>
-          </div>
-          <div class="navbar-item ">
-            <a class="button is-warning is-fullwidth has-text-weight-bold">Create an account</a>
-          </div>
+              <div class="navbar-item">
+                <a class="button is-link is-fullwidth" style="background-color: #3C5998">
+                  <span class="icon">
+                    <i class="fa fa-facebook"></i>
+                  </span>
+                  <span>Sign in with Facebook</span>
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="button is-danger is-fullwidth" style="background-color: #DF4A33">
+                  <span class="icon">
+                    <i class="fa fa-google-plus"></i>
+                  </span>
+                  <span>Sign in with Google</span>
+                </a>
+              </div>
 
-          <hr class="dropdown-divider">
-
-          <div class="navbar-item">
-            <a class="button is-link is-fullwidth" style="background-color: #3C5998">
-              <span class="icon">
-                <i class="fa fa-facebook"></i>
-              </span>
-              <span>Sign in with Facebook</span>
-            </a>
+            </div>
           </div>
-          <div class="navbar-item">
-            <a class="button is-danger is-fullwidth" style="background-color: #DF4A33">
-              <span class="icon">
-                <i class="fa fa-google-plus"></i>
-              </span>
-              <span>Sign in with Google</span>
-            </a>
-          </div>
-          <div class="navbar-item">
-            <a class="button is-link is-fullwidth" style="background-color: #108EDD">
-              <span class="icon has-icons-left">
-                <i class="fa fa-twitter"></i>
-              </span>
-              <span>Sign in with Twitter</span>
-            </a>
-          </div>
+          <!--  ****************  -->
+          <!--  NAVBAR-END END  -->
+          <!--  ****************  -->
 
         </div>
+        <!--  ****************  -->
+        <!--  NAVBAR MENU END  -->
+        <!--  ****************  -->
+
       </div>
-      <!--  ****************  -->
-      <!--  NAVBAR-END END  -->
-      <!--  ****************  -->
-
-    </div>
-    <!--  ****************  -->
-    <!--  NAVBAR MENU END  -->
-    <!--  ****************  -->
-
+    </nav>
   </div>
-</nav>
+  <!--  ****************  -->
+  <!--  HERO HEAD END  -->
+  <!--  ****************  -->
+
+  <!--  ****************  -->
+  <!--  HERO FOOT START  -->
+  <!--  ****************  -->
+  <div class="hero-foot">
+    <div class="tabs is-fullwidth">
+      <ul>
+        <li class="is-active">
+          <a>
+            <span class="icon is-small">
+              <i class="fa fa-image"></i>
+            </span>
+            <span>Pictures</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small">
+              <i class="fa fa-music"></i>
+            </span>
+            <span>Music</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small">
+              <i class="fa fa-film"></i>
+            </span>
+            <span>Videos</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small">
+              <i class="fa fa-file-text-o"></i>
+            </span>
+            <span>Documents</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--  ****************  -->
+  <!--  HERO FOOT END  -->
+  <!--  ****************  -->
+
+</section>
