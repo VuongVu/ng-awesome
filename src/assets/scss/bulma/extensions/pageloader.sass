@@ -1,4 +1,5 @@
 $pageloader-opacity: 1 !default
+$bgColor: #2C3E50;
 
 // keyframes mixin
 =keyframes($name)
@@ -16,7 +17,7 @@ $pageloader-opacity: 1 !default
   position: fixed
   padding-top: 2em
   background: $primary
-  background: rgba( $primary, $pageloader-opacity )
+  background: rgba( $bgColor, $pageloader-opacity )
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)

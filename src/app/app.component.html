@@ -1,12 +1,11 @@
+<div class="pageloader is-active" *ngIf="isLoading">
+  <span class="title">Loading...</span>
+</div>
+
 <app-navbar></app-navbar>
 
-<ul>
-  <li>
-    <h2><a routerLink="/">Home</a></h2>
-  </li>
-  <li>
-    <h2><a routerLink="/sign-in">Sign In</a></h2>
-  </li>
-</ul>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
+<app-footer></app-footer>

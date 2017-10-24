@@ -4,10 +4,8 @@ import { SignInComponent } from './sign-in.component';
 
 @NgModule({
   imports: [
-    RouterModule.forChild([
-      { path: 'sign-in', component: SignInComponent }
-    ])
+    RouterModule.forChild([{ path: '', component: SignInComponent }]),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SignInRoutingModule { }
+export class SignInRoutingModule {}

@@ -76,16 +76,16 @@
 
                     <div class="navbar-dropdown is-boxed is-centered" style="margin-top: 3px; margin-left: -70%">
                       <div class="navbar-item">
-                        <a class="button is-warning is-fullwidth has-text-weight-bold">Sign In</a>
+                        <a class="button is-warning is-fullwidth has-text-weight-bold" [routerLink]="['/sign-in']">Sign In</a>
                       </div>
                       <div class="navbar-item ">
-                        <a class="button is-warning is-fullwidth has-text-weight-bold">Create an account</a>
+                        <a class="button is-warning is-fullwidth has-text-weight-bold" [routerLink]="['/sign-up']">Create an account</a>
                       </div>
 
                       <div class="is-divider" data-content="OR"></div>
 
                       <div class="navbar-item">
-                        <a class="button is-link is-fullwidth" style="background-color: #3C5998">
+                        <a class="button is-link is-fullwidth" style="background-color: #3C5998" [routerLink]="['/routePath']">
                           <span class="icon">
                             <i class="fa fa-facebook"></i>
                           </span>

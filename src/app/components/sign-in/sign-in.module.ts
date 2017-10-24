@@ -7,5 +7,6 @@ import { SignInRoutingModule } from './sign-in.routing';
   imports: [SignInRoutingModule],
   declarations: [SignInComponent],
   exports: [SignInComponent],
+  providers: [],
 })
 export class SignInModule {}
