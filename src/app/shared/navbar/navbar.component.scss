@@ -1,23 +1,42 @@
-.cart-count {
-  color: #4a4a4a;
-  background: #fdd835;
-  height: 20px;
-  border-radius: 2px;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 9px;
-  font-size: 12px;
-  padding: 0 6px;
-  font-weight: 700;
+.top-header {
+  height: 25px;
+  background-color: #102530;
+
+  marquee {
+    color: #f37037;
+    font-style: italic;
+  }
 }
 
-.fullwidth {
-  width: 100%;
+.navbar,
+.hero {
+  background-color: #183545;
 }
 
-.navbar-menu {
-  @media screen and (max-width: 1023px) {
-    background-color: #ffffff !important;
+.navbar {
+  height: 75px;
+  border-bottom: 1px solid #0e1f28;
+}
+
+.tabs {
+  height: 40px;
+
+  a {
+    border-bottom: 0;
+    margin-bottom: 1px;
+    padding: 11px 0;
+  }
+}
+
+.tab-item {
+  a {
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #000000;
+      border-block-end: 8px solid #f37037;
+    }
   }
 }
