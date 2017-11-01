@@ -7,6 +7,7 @@ import {
   NavigationCancel,
   NavigationError,
 } from '@angular/router';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -16,10 +17,19 @@ import {
 export class AppComponent {
   isLoading = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private meta: Meta) {
     router.events.subscribe((event: RouterEvent) => {
       this.navigationInterceptor(event);
     });
+
+    meta.addTags([
+      { name: 'author', content: 'Vuong Vu' },
+      { name: 'keywords', content: 'angular awesome, angular 4 universal, firestore' },
+      {
+        name: 'description',
+        content: 'Angular Awesome',
+      },
+    ]);
   }
 
   // Shows and hides the loading spinner during RouterEvent changes

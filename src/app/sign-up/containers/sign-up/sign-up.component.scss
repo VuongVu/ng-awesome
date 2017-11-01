@@ -29,3 +29,7 @@
 .field-ct {
   margin-right: 23px;
 }
+
+.is-divider-vertical::before {
+  border-left: 0;
+}

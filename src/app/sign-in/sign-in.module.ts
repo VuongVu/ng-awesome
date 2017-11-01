@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { SignInComponent } from './sign-in.component';
+import { SignInComponent } from './containers/sign-in/sign-in.component';
 import { SignInRoutingModule } from './sign-in.routing';
 
 @NgModule({
   imports: [SignInRoutingModule],
   declarations: [SignInComponent],
-  exports: [SignInComponent],
   providers: [],
 })
 export class SignInModule {}

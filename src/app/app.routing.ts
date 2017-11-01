@@ -4,15 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './components/home/home.module#HomeModule',
+    loadChildren: './home/home.module#HomeModule',
   },
   {
     path: 'sign-in',
-    loadChildren: './components/sign-in/sign-in.module#SignInModule',
+    loadChildren: './sign-in/sign-in.module#SignInModule',
   },
   {
     path: 'sign-up',
-    loadChildren: './components/sign-up/sign-up.module#SignUpModule',
+    loadChildren: './sign-up/sign-up.module#SignUpModule',
   },
   {
     path: '**',
@@ -21,8 +21,7 @@ const routes: Routes = [
   },
   {
     path: '404',
-    loadChildren:
-      './components/page-not-found/page-not-found.module#PageNotFoundModule',
+    loadChildren: './page-not-found/page-not-found.module#PageNotFoundModule',
   },
 ];
 

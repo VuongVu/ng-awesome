@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home.component';
+
+import { HomeComponent } from './containers/home/home.component';
 
 @NgModule({
   imports: [RouterModule.forChild([{ path: '', component: HomeComponent }])],

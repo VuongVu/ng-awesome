@@ -1,0 +1,89 @@
+<div class="card">
+  <div class="card-header">
+    <p class="card-header-title">Đăng nhập tài khoản</p>
+  </div>
+
+  <div class="card-content">
+    <div class="columns is-vcentered">
+
+      <div class="column">
+        <div class="field is-horizontal">
+          <div class="field-label is-small">
+            <label class="label">Email</label>
+          </div>
+          <div class="field-body field-ct">
+            <div class="field">
+              <p class="control is-expanded has-icons-left has-icons-right">
+                <input class="input is-small" type="email">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-small">
+            <label class="label">Mật khẩu</label>
+          </div>
+          <div class="field-body field-ct">
+            <div class="field">
+              <p class="control is-expanded has-icons-left has-icons-right">
+                <input class="input is-small" type="password">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <!-- Left empty for spacing -->
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="help">Quên mật khẩu? Nhấn vào
+                <a class="has-text-link">đây</a>
+              </p>
+
+              <div class="control" style="margin-top: 5px">
+                <button class="button is-primary is-small" style="background-color: #009688; font-size: 15px">
+                  Đăng nhập
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="is-divider-vertical" data-content="OR"></div>
+
+      <div class="column is-one-quarter">
+        <div class="field">
+          <p class="control">
+            <a class="button is-link" style="background-color: #3C5998; width: 80%;" (click)="onLoginWithFacebook()">
+              <span class="icon is-small">
+                <i class="fa fa-facebook"></i>
+              </span>
+              <span>Đăng nhập bằng Facebook</span>
+            </a>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control">
+            <a class="button is-link" style="background-color: #DF4A33; width: 80%;" (click)="onLoginWithGoogle()">
+              <span class="icon is-small">
+                <i class="fa fa-google-plus"></i>
+              </span>
+              <span>Đăng nhập bằng Google</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

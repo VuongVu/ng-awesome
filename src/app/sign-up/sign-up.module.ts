@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
+
+import { SignUpComponent } from './containers/sign-up/sign-up.component';
 import { SignUpRoutingModule } from './sign-up.routing';
-import { SignUpComponent } from './sign-up.component';
 
 @NgModule({
   imports: [SignUpRoutingModule],
   declarations: [SignUpComponent],
-  exports: [SignUpComponent],
+  providers: [],
 })
 export class SignUpModule {}

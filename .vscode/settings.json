@@ -8,5 +8,10 @@
 
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "tslint.alwaysShowStatus": true,
-  "tslint.enable": true
+  "tslint.enable": true,
+  "cSpell.words": [
+    "Firestore",
+    "Injectable",
+    "angularfire"
+  ]
 }
